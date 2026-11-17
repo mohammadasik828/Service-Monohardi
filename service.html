@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ইলেকট্রনিক্স ও হোম সার্ভিস | মনোহরদী সেবা</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'SolaimanLipi', Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .nav-links {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #203a43;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+        .nav-links a:hover {
+            background: #0f2027;
+        }
+        h3 {
+            color: #203a43;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px string #ccc;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        button {
+            background: #203a43;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: #0f2027;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>মনোহরদী ইলেকট্রনিক্স ও টেকনিক্যাল সেবা</h1>
+        <h2>ফ্রিজ, টিভি, কারেন্ট ও মোবাইল সমস্যা সমাধানের জন্য আপনার সার্ভিস রিকোয়েস্ট পাঠান</h2>
+    </header>
+
+    <div class="container">
+        <div class="nav-links">
+            <a href="index.html">← মূল পাতা (ম্যারেজ মিডিয়া) এ ফিরে যান</a>
+        </div>
+
+        <h3>সার্ভিস রিকোয়েস্ট ফর্ম</h3>
+        
+        <!-- আপনি চাইলে ফর্মপ্রি (Formspree) এর একই লিংক বা নতুন আরেকটি ফর্ম লিংক এখানে দিতে পারেন -->
+        <form action="https://formspree.io/f/xzerrbwd" method="POST">
+            <div class="form-group">
+                <label for="name">গ্রাহকের নাম:</label>
+                <input type="text" id="name" name="name" placeholder="আপনার নাম লিখুন" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service_type">সমস্যার ধরণ (কী ধরনের সেবা চাচ্ছেন?):</label>
+                <select id="service_type" name="service_type">
+                    <option value="fridge">ফ্রিজ সমস্যা (Fridge Repair)</option>
+                    <option value="tv">টিভি সমস্যা (TV Repair)</option>
+                    <option value="electricity">বিদ্যুৎ / কারেন্টের কাজ (Electrical Wiring/Problem)</option>
+                    <option value="mobile">মোবাইল সমস্যা (Mobile Repair)</option>
+                    <option value="other">অন্যান্য ইলেকট্রনিক্স সেবা</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="problem_details">সমস্যার বিবরণ:</label>
+                <textarea id="problem_details" name="problem_details" rows="3" placeholder="আপনার সমস্যাটি বিস্তারিত লিখুন (যেমন: ফ্রিজ ঠাণ্ডা হচ্ছে না...)" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="address">আপনার ঠিকানা (মনোহরদী এলাকা):</label>
+                <textarea id="address" name="address" rows="2" placeholder="আপনার এলাকার নাম ও বিস্তারিত ঠিকানা লিখুন"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="contact">মোবাইল নম্বর:</label>
+                <input type="tel" id="contact" name="contact" placeholder="যোগাযোগের নম্বর" required>
+            </div>
+
+            <!-- ফর্ম সাবমিট হওয়ার পর ধন্যবাদ পেজে যাওয়ার জন্য -->
+            <input type="hidden" name="_next" value="thanks.html">
+            <button type="submit">সার্ভিস রিকোয়েস্ট পাঠান</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; ২০২৬ মনোহরদী সার্ভিস সেন্টার। সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+</body>
+</html>

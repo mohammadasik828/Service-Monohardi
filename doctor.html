@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ডাক্তার ও রোগী সেবা | মনোহরদী হেলথ কেয়ার</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'SolaimanLipi', Arial, sans-serif;
+        }
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #11998e, #38ef7d);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        header h2 {
+            font-size: 1.2rem;
+            font-weight: normal;
+            opacity: 0.95;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .nav-links {
+            text-align: center;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        .nav-links a {
+            display: inline-block;
+            background: #11998e;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+        .nav-links a:hover {
+            background: #0b6b63;
+        }
+        h3 {
+            color: #11998e;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-row {
+            display: flex;
+            gap: 15px;
+        }
+        .form-row .form-group {
+            flex: 1;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        button {
+            background: #11998e;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background 0.3s ease;
+        }
+        button:hover {
+            background: #0b6b63;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #333;
+            color: white;
+            margin-top: 40px;
+        }
+        @media (max-width: 600px) {
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>মনোহরদী ডাক্তার ও রোগী সেবা কেন্দ্র</h1>
+        <h2>অভিজ্ঞ চিকিৎসক ও বিশেষজ্ঞ ডাক্তারের সিরিয়াল বা স্বাস্থ্য পরামর্শের জন্য আবেদন করুন</h2>
+    </header>
+
+    <div class="container">
+        <div class="nav-links">
+            <a href="index.html">ম্যারেজ মিডিয়া</a>
+            <a href="service.html">ইলেকট্রনিক্স সেবা</a>
+            <a href="transport.html">রিজার্ভ গাড়ি</a>
+        </div>
+
+        <h3>ডাক্তার অ্যাপয়েন্টমেন্ট ও রোগী সেবা ফর্ম</h3>
+        
+        <form action="https://formspree.io/f/xzerrbwd" method="POST">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="patient_name">রোগীর নাম:</label>
+                    <input type="text" id="patient_name" name="patient_name" placeholder="রোগীর পূর্ণ নাম লিখুন" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="patient_age">বয়স:</label>
+                    <input type="number" id="patient_age" name="patient_age" placeholder="বয়স লিখুন" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="doctor_category">কোন ধরনের চিকিৎসকের সেবা চাচ্ছেন?:</label>
+                <select id="doctor_category" name="doctor_category">
+                    <option value="general">এমবিবিএস / সাধারণ চিকিৎসক (MBBS)</option>
+                    <option value="medicine">মেডিসিন বিশেষজ্ঞ</option>
+                    <option value="child">শিশু রোগ বিশেষজ্ঞ (Child Specialist)</option>
+                    <option value="gynecologist">গাইনি ও প্রসূতি বিশেষজ্ঞ (Gynecologist)</option>
+                    <option value="diabetes">ডায়াবেটিস ও হরমোন বিশেষজ্ঞ</option>
+                    <option value="cardiology">হৃদরোগ ও রক্তচাপ বিশেষজ্ঞ</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="disease_details">রোগের বিবরণ / লক্ষণ:</label>
+                <textarea id="disease_details" name="disease_details" rows="3" placeholder="রোগীর কী সমস্যা হচ্ছে সংক্ষেপে লিখুন (যেমন: জ্বর, পেটে ব্যথা, প্রেসারের সমস্যা...)" required></textarea>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="preferred_date">কাঙ্ক্ষিত তারিখ:</label>
+                    <input type="date" id="preferred_date" name="preferred_date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="consultation_type">সেবার ধরন:</label>
+                    <select id="consultation_type" name="consultation_type">
+                        <option value="chamber">ডাক্তার চেম্বারে দেখা করা</option>
+                        <option value="home_visit">বড় রোগী - হোম ভিজিট (Home Visit)</option>
+                        <option value="online">অনলাইন বা ফোনে পরামর্শ</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="address">ঠিকানা (মনোহরদী বা স্থানীয় এলাকা):</label>
+                <textarea id="address" name="address" rows="2" placeholder="আপনার গ্রাম বা এলাকার নাম লিখুন"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="contact">যোগাযোগের মোবাইল নম্বর:</label>
+                <input type="tel" id="contact" name="contact" placeholder="মোবাইল নম্বর দিন" required>
+            </div>
+
+            <input type="hidden" name="_next" value="thanks.html">
+            <button type="submit">ডাক্তার সেবার জন্য আবেদন পাঠান</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; ২০২৬ মনোহরদী হেলথ কেয়ার সেবা। সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+</body>
+</html>

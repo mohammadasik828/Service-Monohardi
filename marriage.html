@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>পাত্র-পাত্রীর তথ্য ফর্ম | নিকাহ-মনোহরদী</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'SolaimanLipi', Arial, sans-serif; }
+        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        header { background: linear-gradient(135deg, #1e3c72, #2a5298); color: white; padding: 30px 20px; text-align: center; }
+        .container { max-width: 800px; margin: 30px auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); }
+        .nav-links { text-align: center; margin-bottom: 20px; }
+        .nav-links a { display: inline-block; background: #2a5298; color: white; padding: 8px 15px; text-decoration: none; border-radius: 5px; font-size: 0.9rem; }
+        h3 { color: #1e3c72; margin-bottom: 20px; border-bottom: 2px solid #eee; padding-bottom: 10px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; font-weight: bold; }
+        input, select, textarea { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; font-size: 1rem; }
+        button { background: #2a5298; color: white; border: none; padding: 12px 20px; font-size: 1.1rem; border-radius: 5px; cursor: pointer; width: 100%; transition: background 0.3s; }
+        button:hover { background: #1e3c72; }
+        footer { text-align: center; padding: 20px; background: #333; color: white; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>নিকাহ-মনোহরদী ম্যারেজ মিডিয়া</h1>
+    </header>
+
+    <div class="container">
+        <div class="nav-links">
+            <a href="index.html">← মূল হোম পেজে ফিরে যান</a>
+        </div>
+
+        <h3>পাত্র-পাত্রীর তথ্য জমা দেওয়ার ফর্ম</h3>
+        <form action="https://formspree.io/f/xzerrbwd" method="POST">
+            <div class="form-group">
+                <label for="name">পূর্ণ নাম:</label>
+                <input type="text" id="name" name="name" placeholder="আপনার নাম লিখুন" required>
+            </div>
+
+            <div class="form-group">
+                <label for="category">আপনি কি খুঁজছেন?:</label>
+                <select id="category" name="category">
+                    <option value="groom">পাত্রের তথ্য (Groom)</option>
+                    <option value="bride">পাত্রীর তথ্য (Bride)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="age">বয়স:</label>
+                <input type="number" id="age" name="age" placeholder="আপনার বয়স লিখুন" required>
+            </div>
+
+            <div class="form-group">
+                <label for="education">শিক্ষাগত যোগ্যতা:</label>
+                <input type="text" id="education" name="education" placeholder="যেমন: অনার্স, মাস্টার্স, এইচএসসি" required>
+            </div>
+
+            <div class="form-group">
+                <label for="occupation">পেশা:</label>
+                <input type="text" id="occupation" name="occupation" placeholder="যেমন: চাকরিজীবী, শিক্ষক, ব্যবসায়ী, প্রবাসী" required>
+            </div>
+
+            <div class="form-group">
+                <label for="address">ঠিকানা (মনোহরদী বা অন্যান্য এলাকা):</label>
+                <textarea id="address" name="address" rows="3" placeholder="আপনার বর্তমান ঠিকানা লিখুন"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="contact">মোবাইল নম্বর:</label>
+                <input type="tel" id="contact" name="contact" placeholder="যোগাযোগের নম্বর" required>
+            </div>
+
+            <input type="hidden" name="_next" value="thanks.html">
+            <button type="submit">তথ্য জমা দিন</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; ২০২৬ নিকাহ-মনোহরদী। সর্বস্বত্ব সংরক্ষিত।</p>
+    </footer>
+
+</body>
+</html>
